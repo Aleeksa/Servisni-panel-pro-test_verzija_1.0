@@ -1,0 +1,20 @@
+{
+  "name": "servispanel-client",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "vite": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3"
+  },
+  "devDependencies": {}
+}
