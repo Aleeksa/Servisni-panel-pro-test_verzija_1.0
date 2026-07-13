@@ -32,9 +32,9 @@ copy server\.env.example server\.env
 3. U `server/.env` promeni admin nalog:
 
 ```env
-ADMIN_EMAIL=admin@firma.com
-ADMIN_PASSWORD=promeni-lozinku
-SESSION_SECRET=promeni-ovo-u-dugacak-random-tekst
+ADMIN_EMAIL=admin@firma123.com
+ADMIN_PASSWORD=Admin1234
+SESSION_SECRET=482b7e5efe693018a840cdc05fb7d3c751504e844d434f7f5e61e1620c1dbb86c
 ```
 
 4. Pokreni razvojno:
