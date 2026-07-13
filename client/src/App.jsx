@@ -249,7 +249,7 @@ export default function App() {
                   <div className="text-center mb-4">
                     <div className="hero-icon mx-auto mb-3"><i className="bi bi-kanban" /></div>
                     <p className="eyebrow mb-2">Profesionalni servisni sistem</p>
-                    <h1 className="display-6 fw-black mb-2">ServisPanel</h1>
+                    <h1 className="display-6 fw-black mb-2">ServisPanel Pro</h1>
                     <p className="text-secondary mb-0">Centralni panel za radne naloge, klijente, rokove i naplatu.</p>
                   </div>
 
@@ -282,7 +282,7 @@ export default function App() {
 
             <div className="col-12 col-lg-7 col-xxl-6 d-none d-lg-block">
               <div className="showcase-panel reveal-card delay-2">
-                <div className="showcase-topbar"><span /><span /><span /><strong>ServisPanel</strong></div>
+                <div className="showcase-topbar"><span /><span /><span /><strong>ServisPanel Pro</strong></div>
                 <div className="showcase-hero">
                   <div>
                     <p className="eyebrow mb-2">Poslovni pregled</p>
@@ -394,7 +394,7 @@ function AppShell({ children, theme, setTheme, user, logout, message }) {
         <div className="container-fluid px-3 px-lg-4">
           <a className="navbar-brand fw-bold d-flex align-items-center gap-2" href="#" onClick={e => e.preventDefault()}>
             <span className="brand-icon"><i className="bi bi-tools" /></span>
-            <span>ServisPanel</span>
+            <span>ServisPanel <span className="pro-mark">Pro</span></span>
           </a>
           <div className="ms-auto d-flex align-items-center gap-2">
             <span className="badge rounded-pill text-bg-success">Online</span>
@@ -493,7 +493,7 @@ function ReportsPage({ tasks, stats, clients, finance }) {
 }
 
 function SettingsPage({ tasks, user, clearAll }) {
-  return <section className="app-page active"><div className="page-heading mb-3"><div><p className="eyebrow mb-1">Podešavanja</p><h3 className="fw-black mb-1">Sistem</h3><p className="text-secondary mb-0">Upravljanje sistemom i podacima.</p></div></div><div className="row g-3"><div className="col-12 col-lg-6"><Window title="Status aplikacije" icon="bi-server" subtitle="Osnovne informacije o radnom prostoru."><div className="settings-list"><div><span>Sistem</span><strong>ServisPanel </strong></div><div><span>Radni prostor</span><strong>Servisni nalozi i klijenti</strong></div><div><span>Pristup</span><strong>Zaštićena admin prijava</strong></div><div><span>Izvoz</span><strong>CSV i štampa</strong></div><div><span>Korisnik</span><strong>{user.email}</strong></div><div><span>Zadaci</span><strong>{tasks.length}</strong></div></div></Window></div><div className="col-12 col-lg-6"><Window title="Opasna zona" icon="bi-exclamation-triangle" subtitle="Briše sve radne naloge iz sistema."><button className="btn btn-outline-danger" onClick={clearAll}><i className="bi bi-trash3 me-1" />Obriši sve zadatke</button><p className="small text-secondary mt-3 mb-0">Ovu akciju koristi samo kada želiš da resetuješ radni prostor.</p></Window></div></div></section>;
+  return <section className="app-page active"><div className="page-heading mb-3"><div><p className="eyebrow mb-1">Podešavanja</p><h3 className="fw-black mb-1">Sistem</h3><p className="text-secondary mb-0">Upravljanje sistemom i podacima.</p></div></div><div className="row g-3"><div className="col-12 col-lg-6"><Window title="Status aplikacije" icon="bi-server" subtitle="Osnovne informacije o radnom prostoru."><div className="settings-list"><div><span>Sistem</span><strong>ServisPanel Pro</strong></div><div><span>Radni prostor</span><strong>Servisni nalozi i klijenti</strong></div><div><span>Pristup</span><strong>Zaštićena admin prijava</strong></div><div><span>Izvoz</span><strong>CSV i štampa</strong></div><div><span>Korisnik</span><strong>{user.email}</strong></div><div><span>Zadaci</span><strong>{tasks.length}</strong></div></div></Window></div><div className="col-12 col-lg-6"><Window title="Opasna zona" icon="bi-exclamation-triangle" subtitle="Briše sve radne naloge iz sistema."><button className="btn btn-outline-danger" onClick={clearAll}><i className="bi bi-trash3 me-1" />Obriši sve zadatke</button><p className="small text-secondary mt-3 mb-0">Ovu akciju koristi samo kada želiš da resetuješ radni prostor.</p></Window></div></div></section>;
 }
 
 function TaskFormOverlay({ task, setTask, onClose, onSave, editing, busy }) {
